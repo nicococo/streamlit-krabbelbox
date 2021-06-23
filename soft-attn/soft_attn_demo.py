@@ -188,7 +188,7 @@ def get_activation(activation, name):
 
 def load_model(img_output_shape):
     model = SoftAttnClassifier(img_output_shape).to('cpu')
-    model.load_state_dict(torch.load("weights.pt", map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load("soft-attn/weights.pt", map_location=torch.device('cpu')))
     model.eval()
     return model
 
