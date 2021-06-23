@@ -1,0 +1,7 @@
+# Streamlit
+streamlit
+numpy
+scipy
+matplotlib
+wikipedia==1.4.0
+
