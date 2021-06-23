@@ -213,7 +213,7 @@ param_noise_char = 0.
 model = load_model(img_output_shape)
 
 transforms = tvtransforms.Compose([tvtransforms.ToTensor(), tvtransforms.Normalize((0.13,), (0.3,))])
-data = HardMNIST('/krabbelkiste/data', img_output_shape, param_noise_level, param_noise_char,
+data = HardMNIST('soft-attn/data', img_output_shape, param_noise_level, param_noise_char,
                  pos_x=param_posx, pos_y=param_posy, digit_out_size=param_size, bg_digits=param_bg_digits,
                  train=True, download=True, transform=transforms)
 
